@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    font-family: karla;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    max-height: 100vh;
+    width: 40em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    gap: 1em;
+    font-size: 1.1em;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.place-country{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.google-maps-link{
+    margin-left:3em;
+    color: #918E9B;
+    font-size: .9em;
+}
+
+.place-img{
+    width: 125px;
+    height:168px;
+    border-radius: 10px;
+}
+
+.place-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#location-icon{
+    font-size: 1em;
+    color: red;
+}
+
+.country-name{
+    font-size: .9em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.place-title{
+    font-size: 2em;
+}
+
+.travel-time{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.travel-descrpt{
+    font-size: .9em;
+    line-height: 1.35;
+}
+
+
+.theme-selector{
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    font-size: 1.3em;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #918E9B;
+    color: white;
+    width: max-content;
+}
+
+.theme-selector:hover{
+    background-color: rgb(72, 122, 166);
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+/* light theme */
+
+.light-container{
+    background-color: whitesmoke;
+}
+
+.light-header{
+    color: white;
+    background-color: #F55A5A;
+}
+
+/* dark theme */
+
+.dark-container{
+    background-color: rgb(33, 31, 31);
+    color: white;
+}
+
+.dark-header{
+    background-color: rgb(151, 46, 203);
+}
